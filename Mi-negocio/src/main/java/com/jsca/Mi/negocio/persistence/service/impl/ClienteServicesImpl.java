@@ -31,8 +31,8 @@ public class ClienteServicesImpl implements ClienteServices {
     }
 
     @Override
-    public void delete(Long id) {
-        clienteRepository.deleteById(id);
+    public void eliminarCliente(String identificacion) {
+        clienteRepository.deleteByNumeroIdentificacion(identificacion);
     }
 
     @Override

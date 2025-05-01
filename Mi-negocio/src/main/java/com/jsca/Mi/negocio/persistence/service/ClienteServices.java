@@ -9,7 +9,7 @@ public interface ClienteServices {
     ClienteEntity save(ClienteEntity cliente);
     Optional<ClienteEntity> findById(Long id);
     List<ClienteEntity> findAll();
-    void delete(Long id);
+    void eliminarCliente(String identificacion);
     Optional<ClienteEntity> findByNumeroIdentificacion(String numeroIdentificacion);
 
     Optional<ClienteEntity> findByCorreo(String correo);

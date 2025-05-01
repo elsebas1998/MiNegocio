@@ -14,8 +14,6 @@ public interface ClienteRepository extends JpaRepository<ClienteEntity, Long> {
 
     Optional<ClienteEntity> findByCelular(String celular);
 
-    void deleteByCodCliente(Integer codCliente);
-
-
+    void deleteByNumeroIdentificacion(String codCliente);
 
 }
